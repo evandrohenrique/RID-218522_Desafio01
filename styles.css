@@ -1,0 +1,163 @@
+/* ========================= */
+/* Reset Básico              */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========================= */
+/* Seção 1 - Cabeçalho       */
+/* ========================= */
+#secao1 {
+    width: 100%;
+    height: 400px;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+#titulo1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#subtitulo {
+    font-size: 18px;
+    color: white;
+}
+
+/* ========================= */
+/* Seção 2 - Números         */
+/* ========================= */
+#secao2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.item {
+    flex: 1;
+    max-width: 300px;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.item span {
+    font-size: 18px;
+    color: #333;
+}
+
+/* ========================= */
+/* Seção 3 - História e Imagem */
+/* ========================= */
+#secao3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+#secao3 .texto {
+    max-width: 500px;
+}
+
+#secao3 .texto h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+#secao3 .texto p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#secao3 .imagem img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* ========================= */
+/* Seção 4 - Contato         */
+/* ========================= */
+#secao4 {
+    background-color: #303030;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#secao4 h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#secao4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#secao4 input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+#secao4 input::placeholder {
+    color: #999;
+}
+
+#secao4 button {
+    background-color: #c67000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#secao4 button:hover {
+    background-color: #a65a00;
+}
+
+/* ========================= */
+/* Responsivo Básico         */
+/* ========================= */
+@media (max-width: 768px) {
+    #secao3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #secao3 .imagem img {
+        width: 90%;
+    }
+}
